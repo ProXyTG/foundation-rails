@@ -211,7 +211,7 @@
         e.preventDefault();
       });
 
-      image.error(function () {
+      image.on('error', function () {
         error = true;
       });
 

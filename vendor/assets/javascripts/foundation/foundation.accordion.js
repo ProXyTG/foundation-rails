@@ -90,7 +90,7 @@
   		var $items = $accordion.find('> dd' + selector + ', > li' + selector);
   		if ( $items.length < 1 ) {
   			if ( window.console ) {
-  				console.error('Selection not found.', selector);
+  				console.on('error', 'Selection not found.', selector);
   			}
   			return false;
   		}

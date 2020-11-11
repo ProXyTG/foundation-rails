@@ -658,7 +658,7 @@
 
       if (el.length < 1) {
         if (window.console) {
-          console.error('element not valid', el);
+          console.on('error', 'element not valid', el);
         }
         return false;
       }
@@ -728,7 +728,7 @@
 
       if (el.length < 1) {
         if (window.console) {
-          console.error('element not valid', el);
+          console.on('error', 'element not valid', el);
         }
         return false;
       }
