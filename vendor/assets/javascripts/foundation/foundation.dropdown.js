@@ -37,7 +37,7 @@
             if (S(this).parent('[data-reveal-id]').length) {
               e.stopPropagation();
             }
-            self.toggle($(this));
+            self.toggleClass($(this));
           }
         })
         .on('mouseenter.fndtn.dropdown', '[' + this.attr_name() + '], [' + this.attr_name() + '-content]', function (e) {

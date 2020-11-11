@@ -162,7 +162,7 @@
         .off('.topbar')
         .on('click.fndtn.topbar', '[' + this.attr_name() + '] .toggle-topbar', function (e) {
           e.preventDefault();
-          self.toggle(this);
+          self.toggleClass(this);
         })
         .on('click.fndtn.topbar contextmenu.fndtn.topbar', '.top-bar .top-bar-section li a[href^="#"],[' + this.attr_name() + '] .top-bar-section li a[href^="#"]', function (e) {
           var li = $(this).closest('li'),
@@ -174,7 +174,7 @@
             hoverLi.removeClass('hover');
           }
           if (self.breakpoint() && !li.hasClass('back') && !li.hasClass('has-dropdown')) {
-            self.toggle();
+            self.toggleClass();
           }
 
         })
@@ -185,7 +185,7 @@
               settings = topbar.data(self.attr_name(true) + '-init');
 
           if (target.data('revealId')) {
-            self.toggle();
+            self.toggleClass();
             return;
           }
 
@@ -320,7 +320,7 @@
             .removeClass('hover');
 
             if (doToggle) {
-              self.toggle(topbar);
+              self.toggleClass(topbar);
             }
         }
 

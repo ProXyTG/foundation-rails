@@ -109,13 +109,13 @@
   	open : function(options) {
   		var options = typeof options !== 'undefined' ? options : {};
   		options.toggle_state = 'open';
-  		this.toggle(options);
+  		this.toggleClass(options);
   	},
   
   	close : function(options) {
   		var options = typeof options !== 'undefined' ? options : {};
   		options.toggle_state = 'close';
-  		this.toggle(options);
+  		this.toggleClass(options);
   	},	
 
     off : function () {},

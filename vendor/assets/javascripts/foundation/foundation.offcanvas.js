@@ -197,7 +197,7 @@
     click_toggle_class : function (e, class_name) {
       e.preventDefault();
       var $off_canvas = this.get_wrapper(e);
-      this.toggle(class_name, $off_canvas);
+      this.toggleClass(class_name, $off_canvas);
     },
 
     click_remove_class : function (e, class_name) {
