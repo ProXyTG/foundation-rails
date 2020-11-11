@@ -249,7 +249,7 @@
       if (!this.locked()) {
         visible_image.trigger('open.fndtn.clearing');
         // set the image to the selected thumbnail
-        loaded = this.load($image);
+        loaded = this.on('load', $image);
         if (loaded.interchange) {
           image
             .attr('data-interchange', loaded.interchange)

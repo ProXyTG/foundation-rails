@@ -351,8 +351,8 @@
     },
 
     reflow : function () {
-      this.load('images', true);
-      this.load('nodes', true);
+      this.on('load', 'images', true);
+      this.on('load', 'nodes', true);
     }
 
   };
