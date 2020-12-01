@@ -317,7 +317,6 @@
 
     this.update_progress = function (w) {
       var new_progress = progress.clone();
-      new_progress.attr('style', '');
       new_progress.css('width', w + '%');
       progress.replaceWith(new_progress);
       progress = new_progress;
