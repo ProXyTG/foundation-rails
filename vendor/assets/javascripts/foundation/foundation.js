@@ -170,6 +170,7 @@
               info        = null;
 
           style.type  = 'text/css';
+          style.nonce = gon.style_nonce
           style.id    = 'matchmediajs-test';
 
           script.parentNode.insertBefore(style, script);
@@ -314,7 +315,7 @@
       'xxlarge'     : new MediaQuery('.foundation-mq-xxlarge')
     },
 
-    stylesheet : $('<style></style>').appendTo('head')[0].sheet,
+    stylesheet : $('<style nonce='+gon.style_nonce+'></style>').appendTo('head')[0].sheet,
 
     global : {
       namespace : undefined
