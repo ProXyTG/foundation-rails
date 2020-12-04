@@ -328,7 +328,8 @@
             context = this;
 
         if (el.parent(root_element).length === 0) {
-          var placeholder = el.wrap('<div style="display: none;" />').parent();
+          var placeholder = el.wrap('<div class="placeholder-foundation" />').parent();
+          document.getElementsByClassName('placeholder-foundation')[0].style.display = 'none'
 
           el.on('closed.fndtn.reveal.wrapped', function () {
             el.detach().appendTo(placeholder);
